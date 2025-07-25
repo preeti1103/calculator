@@ -4,6 +4,8 @@ A basic calculator web app built with HTML, CSS, and JavaScript.
 
 <img width="400" height="600" alt="image" src="https://github.com/user-attachments/assets/e31cdf37-e514-4da6-821a-678308959738" />
 
+**Demo**
+https://preeti1103.github.io/calculator/
 
  **Features**
 
