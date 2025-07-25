@@ -37,16 +37,12 @@
         <div class="button-row">
             <button class="input-button" onclick="updateCalculation('0')">0</button>
             <button class="input-button" onclick="updateCalculation('.')">.</button>
-            <button class="input-button"
-                onclick="evaluateCalculation(); localStorage.setItem('calculation', calculation);"> = </button>
+            <button class="input-button" onclick="evaluateCalculation();"> = </button>
             <button class="input-sign-button" onclick="updateCalculation('/')"> / </button>
         </div>
 
         <div class="button-row">
-            <button class="input-clear-button"
-                onclick="clearCalculation(); localStorage.setItem('calculation', calculation);">
-                Clear
-            </button>
+            <button class="input-clear-button" onclick="clearCalculation();">Clear</button>
         </div>
     </div>
 
