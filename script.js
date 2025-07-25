@@ -20,7 +20,7 @@ document.addEventListener('keydown', function (event) {
     }
     // Calculate
     else if (key === '=' || key === 'Enter') {
-        calculateResult();
+        evaluateCalculation();
     }
     // Backspace
     else if (key === 'Backspace') {
@@ -39,7 +39,7 @@ function updateCalculation(value) {
     displayCalculation();
 }
 
-function calculateResult() {
+function evaluateCalculation() {
     try {
         // Fix for cases like "5+" which would error
         if ('+-*/'.includes(calculation.slice(-1))) {
@@ -52,6 +52,7 @@ function calculateResult() {
     } catch (error) {
         calculation = 'Error';
         displayCalculation();
+        setTimeout(clearCalculation, 1500);
     }
 }
 
